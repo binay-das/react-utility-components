@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './CustomCursor.css';
 
 export default function CustomCursor() {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
@@ -49,6 +48,14 @@ export default function CustomCursor() {
             width: `${24 - i * 0.3}px`,
             height: `${24 - i * 0.3}px`,
             opacity: `${1 - i * 0.02}`,
+
+            position: 'absolute',
+            backgroundColor: 'aquamarine',
+            borderRadius: '50%',
+            pointerEvents: 'none',
+            zIndex: '1000',
+            transition: 'transform 0.2s ease-out, opacity 0.1s',
+            boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)'
           }}
         />
       ))}

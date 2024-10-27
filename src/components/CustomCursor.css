@@ -1,9 +1,0 @@
-.dot {
-    position: absolute;
-    background-color: aquamarine;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 1000;
-    transition: transform 0.2s ease-out, opacity 0.1s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
