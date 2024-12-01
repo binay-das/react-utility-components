@@ -1,0 +1,52 @@
+/* Accordion container styling */
+.accordion-container {
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.accordion {
+    margin-bottom: 15px;
+    /* border-bottom: 1px solid #e0e0e0; */
+}
+
+.accordion h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #007BFF;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion p {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 15px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1rem;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    border-radius: 0 0 8px 8px;
+}
+
+.accordion p.expanded {
+    max-height: 150px; 
+    padding: 15px;
+}
+
+.accordion h3 span {
+    font-size: 1.5rem;
+    color: #333;
+    transition: transform 0.3s ease;
+}
